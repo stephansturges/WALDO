@@ -1,5 +1,5 @@
 # WALDO
-Whereabouts Ascertainment for Low Detectable Objects
+Whereabouts Ascertainment for Low-lying Detectable Objects
 
 
 # What is this?
