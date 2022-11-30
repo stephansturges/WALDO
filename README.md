@@ -40,6 +40,9 @@ In the amateur and professional UAV space there is a need for simple and cheap t
 
 The neural network is a YOLOV7-based single-shot-detector, trained on my own synthetic dataset!
 
+# Update 2022 11 30
+
+Alpha 0.2: introducing network / model *no3* which is a full-sized YOLOv7. This network performs an order of magnitude better in terms of accuracy and detection but also runs at <10% of the speed on an embedded camera from Luxonis.
 
 # Update 2022 11 24
 
