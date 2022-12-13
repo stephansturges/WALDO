@@ -6,15 +6,6 @@ Whereabouts Ascertainment for Low-lying Detectable Objects (get it?)
 WALDO is a trained detection (bounding-box) deep neural network for UAV enabling the detection of land-based objects. The current alpha version detects only people for now. Next up will be cars, trees, buildings etc... Let me know what you'd like to detect!
 If you need segmentation instead of detection make sure to check out OpenLander here: https://github.com/stephansturges/OpenLander/
 
-## pics
-
-<img src="pics/1.png" width="320" height="320"/>
-<img src="pics/2.png" width="320" height="320"/>
-<img src="pics/3.png" width="320" height="320"/>
-<img src="pics/4.png" width="320" height="320"/>
-<img src="pics/5.png" width="320" height="320"/>
-<img src="pics/6.png" width="320" height="320"/>
-<img src="pics/7.png" width="320" height="320"/>
 
 
 # How can I use this?
@@ -31,18 +22,22 @@ This is how to do it:
 
 ... and then wait a week or so for your global-shutter, fixed-focus, high-sensitivity sensor to arrive :)
 
-
 # Why? 
 
 In the amateur and professional UAV space there is a need for simple and cheap tools that can be used to determine safe emergency landing spots, avoiding crashes and potential harm to people.
 
 # How does it work?
 
-The neural network is a YOLOV7-based single-shot-detector, trained on my own synthetic dataset!
+The neural network is a YOLO-based single-shot-detector, trained on my own synthetic dataset!
 
 # Update 2022 11 30
 
 Alpha 0.2: introducing network / model *no3* which is a full-sized YOLOv7. This network performs an order of magnitude better in terms of accuracy and detection but also runs at <10% of the speed on an embedded camera from Luxonis.
+
+
+# Update 2022 12 13
+
+Alpha 0.3: introducing a new network which is based on a quantized / pruned / sparsified yoloV5 model which runs at 4-5 FPS on the embedded system. I'm also adding this model in ONNX format for use on other devices. General mAP is still quite low for most use cases.
 
 # Update 2022 11 24
 
@@ -61,6 +56,15 @@ NOTE: the default neural network is the one in /models/2/ , you can play with th
 There will be updates in the future, but I am also developing custom versions of the neural network for specific commercial use cases and I won't be adding everything to OpenLander. 
 OpenLander will remain free to use and is destined to improving safety of UAVs for all who enjoy using them!
 
+## pics
+
+<img src="pics/1.png" width="320" height="320"/>
+<img src="pics/2.png" width="320" height="320"/>
+<img src="pics/3.png" width="320" height="320"/>
+<img src="pics/4.png" width="320" height="320"/>
+<img src="pics/5.png" width="320" height="320"/>
+<img src="pics/6.png" width="320" height="320"/>
+<img src="pics/7.png" width="320" height="320"/>
 # Sources:
 Some code taken from the excellent https://github.com/luxonis/depthai-experiments from Luxonis.
 
