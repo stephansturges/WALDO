@@ -36,6 +36,7 @@ The neural network is a YOLO-based single-shot-detector, trained on my own synth
 Alpha 0.3: introducing a new network which is based on a quantized / pruned / sparsified yoloV5 model which runs at 4-5 FPS on the embedded system. I'm also adding this model in ONNX format for use on other devices. General mAP is still quite low for most use cases, but it works great as-is for detecting individual people in sparse landscapes for use in SAR for example!
 
 Check out a quick preview: 
+
 https://www.loom.com/share/811239eb34104a23bbef03befadc9f85
 
 
