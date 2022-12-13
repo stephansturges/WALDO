@@ -1,10 +1,13 @@
 # WALDO
 Whereabouts Ascertainment for Low-lying Detectable Objects (get it?) 
 
+<div style="position: relative; padding-bottom: NaN%; height: 0;"><iframe src="https://www.loom.com/embed/811239eb34104a23bbef03befadc9f85" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 # What is this?
 
 WALDO is a trained detection (bounding-box) deep neural network for UAV enabling the detection of land-based objects. The current alpha version detects only people for now. Next up will be cars, trees, buildings etc... Let me know what you'd like to detect!
 If you need segmentation instead of detection make sure to check out OpenLander here: https://github.com/stephansturges/OpenLander/
+
 
 
 
