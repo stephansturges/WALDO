@@ -17,9 +17,9 @@ import blobconverter
 # parse arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("-m", "--model", help="Provide model name or model path for inference",
-                    default='./models/2/best_openvino_2021.4_6shave.blob', type=str)
+                    default='./models/alpha03_640px_yolov5s_sparse_quantized_69e/best_openvino_2021.4_6shave.blob', type=str)
 parser.add_argument("-c", "--config", help="Provide config path for inference",
-                    default='./models/2/best.json', type=str)
+                    default='./models/alpha03_640px_yolov5s_sparse_quantized_69e/best.json', type=str)
 args = parser.parse_args()
 
 # parse config
@@ -76,8 +76,8 @@ camRgb.setPreviewSize(W, H)
 camRgb.setResolution(dai.ColorCameraProperties.SensorResolution.THE_1080_P)
 camRgb.setInterleaved(False)
 camRgb.setColorOrder(dai.ColorCameraProperties.ColorOrder.BGR)
-camRgb.setFps(20)
-camRgb.initialControl.setManualFocus(70)
+camRgb.setFps(4)
+#camRgb.initialControl.setManualFocus(70)
 
 # Network specific setting
 detectionNetwork.setConfidenceThreshold(confidenceThreshold)
