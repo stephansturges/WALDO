@@ -57,7 +57,7 @@ For example:
 1. download the model weights and run with yolov7 straight from the command-line like this: \
 python3 detect.py --weights best.pt --img-size 960 --save-txt --source /your_frames/ --project /your_save_folder/ 
 
-2. Or you can open the ONNX model from the /ONNX format with opencv and run your inference from there. Just take a look at the sample script run_local_onnx_boilerplate.py provided in the repo. If you have an Nvidia GPU set "cuda" in there to True, and point it at your files. If you're missing any dependencies you can use the provided requirements.txt to set them up... and that's all there it to it!!
+2. Or you can open the ONNX model from the /ONNX format with opencv and run your inference from there. Just take a look at the sample script run_local_onnx_boilerplate.py provided in the repo. If you have an Nvidia GPU set "cuda" in there to True, and point it at your files. If you're missing any dependencies you can use the provided requirements.txt to set them up... and that's all there is to it!
 
 3. Or you can load the .pt model and convert it to ONNX with your own settings using yolov7 (something like export.py --weights /best.pt  --grid --end2end --simplify --topk-all 100 --iou-thres 0.45 --conf-thres 0.3 --img-size 960 960 --max-wh 960 )  etc... read the export docs to figure out what you need.
 
