@@ -21,6 +21,8 @@ These are the current detection classes:
 11 --> boat \
 12 --> bike \
 
+This AI system is primarily designed to be used for ground-risk mitigation for large flying objects traveling over populated areas, but it can also be useful for all sorts of other things like "search and rescue"-type operations, disaster relief etc... it's up to you!
+
 If you need ground-risk segmentation instead of object detection make sure to check out OpenLander here: https://github.com/stephansturges/OpenLander/
 
 ## How well does it work? 
