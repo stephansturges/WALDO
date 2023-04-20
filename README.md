@@ -72,7 +72,7 @@ Additionally the space needs a reference system to serve as a benchmark for priv
 
 ## What is next
 
-Over the coming weeks I'm going to update this repository with variants of the main model optmized for specific use cases, along with some boilerplate code for deployment!
+Over the coming weeks I'm going to update this repository with variants of the main model optmized for specific use cases,<del> along with some boilerplate code for deployment! </del> DONE!
 
 # Support this project :)
 If you'd like to help me make this better please consider donating a few $$$ to keep my GPUs running using Ko-Fi:
