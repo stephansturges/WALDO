@@ -1,0 +1,1 @@
+export.py --weights ../trained_networks/20230420_12class_960/best.pt  --grid --end2end --simplify         --topk-all 100 --iou-thres 0.1 --conf-thres 0.3 --img-size 960 960 --max-wh 960
