@@ -79,6 +79,12 @@ If you'd like to help me make this better please consider donating a few $$$ to 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O1FBP5F)
 
 
+# Credits:
+All code written by me and GPT4 😄
+
+Thanks to https://gdo152.llnl.gov/cowc/ for the satellite image of Columbus, Ohio used in the tiling demo.
+
+
 ## Copyright is MIT license
 Copyright Stephan Sturges 2023
 
