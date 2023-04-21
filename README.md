@@ -67,8 +67,10 @@ Use the provided script called run_local_onnx_largeinput_tiled_process.py
 Set "CUDA" to "True" if you have an Nvidia GPU, and point it to the image that you want to tile and process by changing this line:
 img = cv2.imread('./Columbus_COWC_1.png')
 
-The script will spit out a re-built full-size image (below is a crop): \
-<img width="1202" alt="image" src="https://user-images.githubusercontent.com/20320678/233666879-34fc1101-4773-4f80-a99d-2a85d6189e1e.png">
+The script will spit out a re-built full-size image (below are crops): \
+<img width="1202" alt="image" src="https://user-images.githubusercontent.com/20320678/233674000-c3f31896-08dc-4d98-ba59-7c0debcfbcc9.png">
+\
+<img width="1202" alt="image" src="https://user-images.githubusercontent.com/20320678/233673854-5fb23b81-d8d3-4483-8e9b-f467263aa59c.png">
 
 
 
