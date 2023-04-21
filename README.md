@@ -53,13 +53,27 @@ Sure, send me an email. I do lots of commercial perception stuff for UAV and oth
 
 There are many ways you can use WALDO! 
 
-For example: 
-1. download the model weights and run with yolov7 straight from the command-line like this: \
+### example 1: real-time inference!
+Download the model weights and run with yolov7 straight from the command-line like this: \
 python3 detect.py --weights best.pt --img-size 960 --save-txt --source /your_frames/ --project /your_save_folder/ 
 
-2. Or you can open the ONNX model from the /ONNX format with opencv and run your inference from there. Just take a look at the sample script run_local_onnx_boilerplate.py provided in the repo. If you have an Nvidia GPU set "cuda" in there to True, and point it at your files. If you're missing any dependencies you can use the provided requirements.txt to set them up... and that's all there is to it!
+### example 2: run on a single image!
+Open the ONNX model from the /ONNX format with opencv and run your inference from there. 
+Just take a look at the sample script run_local_onnx_boilerplate.py provided in the repo. 
+If you have an Nvidia GPU set "cuda" in there to True, and point it at your files. If you're missing any dependencies you can use the provided requirements.txt to set them up... and that's all there is to it!
 
-3. Or you can load the .pt model and convert it to ONNX with your own settings using yolov7 (something like export.py --weights /best.pt  --grid --end2end --simplify --topk-all 100 --iou-thres 0.45 --conf-thres 0.3 --img-size 960 960 --max-wh 960 )  etc... read the export docs to figure out what you need.
+### example 3: run on a very very large image (like earth bbservation stuff):
+Use the provided script called run_local_onnx_largeinput_tiled_process.py
+Set "CUDA" to "True" if you have an Nvidia GPU, and point it to the image that you want to tile and process by changing this line:
+img = cv2.imread('./Columbus_COWC_1.png')
+The script will spit out a re-built full-size image (below is a crop): 
+
+....along with a count of objects to the console:
+<img width="378" alt="image" src="https://user-images.githubusercontent.com/20320678/233662619-caefb5c9-29bf-48b6-8f8b-78ddf1c59dda.png">
+
+
+### example 4: export your own ONNX model with your favorite settings!
+Load the .pt model and convert it to ONNX with your own settings using yolov7 (something like export.py --weights /best.pt  --grid --end2end --simplify --topk-all 100 --iou-thres 0.45 --conf-thres 0.3 --img-size 960 960 --max-wh 960 )  etc... read the export docs to figure out what you need.
 
 Alternatively you can use the included ONNX model and deploy it *_wherever you want_* ! 
 
