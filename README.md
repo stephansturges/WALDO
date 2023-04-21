@@ -62,13 +62,18 @@ Open the ONNX model from the /ONNX format with opencv and run your inference fro
 Just take a look at the sample script run_local_onnx_boilerplate.py provided in the repo. 
 If you have an Nvidia GPU set "cuda" in there to True, and point it at your files. If you're missing any dependencies you can use the provided requirements.txt to set them up... and that's all there is to it!
 
-### example 3: run on a very very large image (like earth bbservation stuff):
+### example 3: run on a very very large image (like earth observation stuff):
 Use the provided script called run_local_onnx_largeinput_tiled_process.py
 Set "CUDA" to "True" if you have an Nvidia GPU, and point it to the image that you want to tile and process by changing this line:
 img = cv2.imread('./Columbus_COWC_1.png')
-The script will spit out a re-built full-size image (below is a crop): 
+
+The script will spit out a re-built full-size image (below is a crop): \
+<img width="1202" alt="image" src="https://user-images.githubusercontent.com/20320678/233666879-34fc1101-4773-4f80-a99d-2a85d6189e1e.png">
+
+
 
 ....along with a count of objects to the console: \
+
 <img width="378" alt="image" src="https://user-images.githubusercontent.com/20320678/233662619-caefb5c9-29bf-48b6-8f8b-78ddf1c59dda.png">
 
 
