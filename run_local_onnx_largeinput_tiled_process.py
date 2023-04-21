@@ -118,14 +118,13 @@ merged_image = merge_tiles(processed_tiles, padded_shape, padding=padding)
 
 # Remove padding from the merged image to get the final output
 final_image = merged_image[: img.shape[0], : img.shape[1], :]
-
-# Convert color space from BGR to RGB
-final_image_rgb = cv2.cvtColor(final_image, cv2.COLOR_BGR2RGB)
+    
+# Convert color space from RGB to BGR
+final_image_bgr = cv2.cvtColor(final_image, cv2.COLOR_RGB2BGR)
 
 # Save the final image
-pillimage = Image.fromarray(final_image)
-pillimage.save('./Columbus_out.jpg', 'JPEG')
-print("woot")
+cv2.imwrite('./Columbus_out.jpg', final_image)
+
 
 # Print the total count of each class
 print("Total count of each class:")
