@@ -68,7 +68,7 @@ Set "CUDA" to "True" if you have an Nvidia GPU, and point it to the image that y
 img = cv2.imread('./Columbus_COWC_1.png')
 The script will spit out a re-built full-size image (below is a crop): 
 
-....along with a count of objects to the console:
+....along with a count of objects to the console: \
 <img width="378" alt="image" src="https://user-images.githubusercontent.com/20320678/233662619-caefb5c9-29bf-48b6-8f8b-78ddf1c59dda.png">
 
 
