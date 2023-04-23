@@ -16,6 +16,9 @@ cuda = True
 w = "./ONNX_models/20230420_12class_960_1.onnx"
 img = cv2.imread('./Columbus_COWC_1.png')
 
+names = ['car', 'van', 'truck', 'building', 'human', 'gastank', 'digger', 'container', 'bus', 'pylon', 'boat', 'bike']
+colors = {name:[random.randint(0, 255) for _ in range(3)] for i,name in enumerate(names)}
+
 
 providers = ['CUDAExecutionProvider', 'CPUExecutionProvider'] if cuda else ['CPUExecutionProvider']
 session = ort.InferenceSession(w, providers=providers)
