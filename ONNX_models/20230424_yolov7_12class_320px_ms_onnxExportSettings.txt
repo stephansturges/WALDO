@@ -1,0 +1,2 @@
+python3 export.py --weights /inputdata/trained_networks/20230425_320px_ms/exp2/weights/best.pt  --grid --end2end --simplify --topk-all 100 --iou-thres 0.2 --conf-thres 0.25 --img-size 320 320 --max-wh 320
+
