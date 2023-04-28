@@ -36,11 +36,9 @@ Multiple other versions of the model are coming very soon, including (of course!
 
 Some detection metrics from training of the yolov7 NOMS 960px model: 
 ![confusion_matrix](https://user-images.githubusercontent.com/20320678/233322563-4770423b-6d97-4221-ae2e-c8c63961e6e3.png)
-not bad!
 
 Confusion matrix of the yolov7x NOMS 960px:
 ![confusion_matrix](https://user-images.githubusercontent.com/20320678/235072352-4f86877b-bcb8-457b-bbae-458c23280de6.png)
-even better! 
 
 As you can see classes that are close like "car" and "van" suffer from some confusion. Same goes for things where you often require more context to understand the object like "truck" / "container" / "gastank"... and some classes require more data / just more training to get better. Feel free to donate with the Ko-Fi link to help me make it better! 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O1FBP5F)
