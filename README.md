@@ -41,6 +41,7 @@ Confusion matrix of the yolov7x NOMS 960px:
 ![confusion_matrix](https://user-images.githubusercontent.com/20320678/235072352-4f86877b-bcb8-457b-bbae-458c23280de6.png)
 
 Confusion matrix of the yolov7_e6e NOMS 960px (largest model):
+![confusion_matrix](https://user-images.githubusercontent.com/20320678/235427845-73e6129d-829f-4eaf-a188-00fcc89c1e4a.png)
 
 
 
