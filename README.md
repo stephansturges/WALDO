@@ -46,6 +46,9 @@ Confusion matrix of the yolov7x NOMS 960px:
 Confusion matrix of the yolov7_e6e NOMS 960px (largest model):
 ![confusion_matrix](https://user-images.githubusercontent.com/20320678/235427845-73e6129d-829f-4eaf-a188-00fcc89c1e4a.png)
 
+Confusion matrix of the yolov7_tiny NOMS 960px (smallest model):
+![20230502_yolov7-tiny_12class_960px_noms_adam_80b_confusionMatrix pt](https://user-images.githubusercontent.com/20320678/235665053-33f0d331-0e0b-47b1-beff-150cf117760e.png)
+
 
 
 As you can see classes that are close like "car" and "van" suffer from some confusion. Same goes for things where you often require more context to understand the object like "truck" / "container" / "gastank"... and some classes require more data / just more training to get better. Feel free to donate with the Ko-Fi link to help me make it better! 
