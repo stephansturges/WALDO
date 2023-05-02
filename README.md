@@ -34,8 +34,11 @@ Check out the video below for a high-level idea of the performance of the defaul
 
 Multiple other versions of the model are coming very soon, including (of course!) versions that are optimized to be embedded for real-time _ground-risk mitigation_. 
 
-Some detection metrics from training of the yolov7 NOMS 960px model: 
+Some detection metrics from training of the yolov7 NOMS 960px model (20230420_yolov7_12class_960px_noms) : 
 ![confusion_matrix](https://user-images.githubusercontent.com/20320678/233322563-4770423b-6d97-4221-ae2e-c8c63961e6e3.png)
+
+An alternative yolov7 model (20230502_yolov7_12class_960px_noms_adam_30b):
+![20230502_yolov7_12class_960px_noms_adam_30b_confusionMatrix](https://user-images.githubusercontent.com/20320678/235611200-c787ea9f-ad94-4290-8588-88c6fd281aee.png)
 
 Confusion matrix of the yolov7x NOMS 960px:
 ![confusion_matrix](https://user-images.githubusercontent.com/20320678/235072352-4f86877b-bcb8-457b-bbae-458c23280de6.png)
