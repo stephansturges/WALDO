@@ -1,0 +1,2 @@
+export.py --weights /inputdata/trained_networks/20230515_yolov7tiny_416px_MS_adam_bs64/exp5/weights/best.pt  --grid --end2end --simplify         --topk-all 100 --iou-thres 0.1 --conf-thres 0.3 --img-size 416 416 --max-wh 416
+
