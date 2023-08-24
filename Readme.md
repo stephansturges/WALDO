@@ -1,23 +1,9 @@
-
-    :::       :::         :::         :::            :::::::::       ::::::::     
-   :+:       :+:       :+: :+:       :+:            :+:    :+:     :+:    :+:     
-  +:+       +:+      +:+   +:+      +:+            +:+    +:+     +:+    +:+      
- +#+  +:+  +#+     +#++:++#++:     +#+            +#+    +:+     +#+    +:+       
-+#+ +#+#+ +#+     +#+     +#+     +#+            +#+    +#+     +#+    +#+        
-#+#+# #+#+#  #+# #+#     #+# #+# #+#        #+# #+#    #+# #+# #+#    #+# #+#     
-###   ###   ### ###     ### ### ########## ### #########  ###  ########  ###      
-
-
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___                                                                                                                
-
-
+W.A.L.D.O.
 Whereabouts Ascertainment for Low-lying Detectable Objects 
-
+---------------------------------------------------------------------
 
 Welcome to the WALDO v2.5 FINAL release! 🥳🥳🥳🥳
-
+---------------------------------------------------------------------
 
 Thanks to all participants in the beta! I had over 3000 sign-ups for the 
 beta release and iterated really fast... I hope you'll like the result!
@@ -26,10 +12,7 @@ I am assuming you have  some experience with deployment of AI systems,
 but if you have any trouble using this release you can contact me at 
 stephan.sturges at gmail
 
-
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___                                                                                
+---------------------------------------------------------------------
 
 
 WHAT IS WALDO?
@@ -60,10 +43,7 @@ Well trained classes:
 16. 'plane' --> planes (very unreliable for now, probably not worth using yet)
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
-
+---------------------------------------------------------------------
 
 WHARE IS WALDO?
 
@@ -74,9 +54,7 @@ using the link below:
 https://bit.ly/3P7UdZ6
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___                                                                                                                                                                
+---------------------------------------------------------------------                                                                                                                                                               
 
 FOR AI NERDS !
 
@@ -91,9 +69,7 @@ for people who support further development of the project on Ko-Fi (https://ko-f
 being to offset some of the cost of training these networks (over 60K USD spent on AWS to date! 😅) 
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___                                                                                
+---------------------------------------------------------------------                                                                                
 
 HOW CAN I START WITH WALDO?  
 
@@ -105,9 +81,7 @@ You may need to install a couple of other bits and pieces depending on your pyth
 If you find anything really blocking send me an email and I'll update this readme.
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___                                                                                
+---------------------------------------------------------------------  
 
 RUN THE MODELS USING THE BOILERPLATE CODE IN /playground:
 
@@ -154,9 +128,7 @@ The output can be found in ./images_out/, you'll get images with pretty overlays
 with the actual detections
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
+---------------------------------------------------------------------
 
 
 
@@ -187,10 +159,7 @@ an inference server, and some are made for embedding on tiny edge devices... tak
 a look around and find one that works for you!
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
-
+---------------------------------------------------------------------
 
 GOING DEEPER
 
@@ -209,9 +178,7 @@ are super cool and do excellent AI detections directly on 15g hardware that cost
 
 Enjoy!
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
+---------------------------------------------------------------------
 
 
 
@@ -221,9 +188,7 @@ You can find the repo with WALDO v1.0 here:
 https://github.com/stephansturges/WALDO
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
+---------------------------------------------------------------------
 
 
 CAN YOU HELP ME WITH X? 
@@ -231,9 +196,7 @@ CAN YOU HELP ME WITH X?
 Sure, email me at stephan.sturges@gmail.com
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
+---------------------------------------------------------------------
 
 
 DETECTION OF X ISN'T WORKING AS EXPECTED:
@@ -264,9 +227,7 @@ etc...
 
 Contact me at stephan.sturges@gmail.com to find out more.
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
+---------------------------------------------------------------------
 
 SUPPORT WALDO!
 
@@ -313,36 +274,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
-
-
-MMMMMMMMMMMMMMMMMMMMMMMW0d:,,;,cOK0kkkkkkxoc,',,,;l0NXNNWWWWWWMWMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMWKc',::;,;dkxkO00Oxl:;;::;,'.,;;;;:llcoXMWWMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMO;,;;,:x0NWWNOdl;,;c;,'..............'xNWMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMNKOd;;ox0XXxc;,;::,'..................lXMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMNo:x0Oo:;;::;,....''..'............:KMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMNolxc;;::;''.',.'....'.............,xNMMMMMMMMMMM
-WMMWNXXWMWWNWMMMMMMMMMMMMMWo';;::;'....ckl,.'...'';c:....':::ckNMMMMMMMMMMM
-WMMKddoONOddxXMMMMMMMMMMMWWk;;:,'...,:,cO0kdodoc,:odl,.. ;kKNWMMMMMMMMMMMMM
-OxOklOxlOooOlkMMMMMMMMMMMMMWOoc'....ckl:odoco0k;lKKKKx,..:clKMMWMMMMMMMMMMM
-cololo0oooo0ldWMMMMMMMMMMMMMMWWO:.'l;.:0X0X0c,',0WOkNX:.:c;oXMMMMMMMMMMMMMM
-ldkl:ckkc:o0odNMWWWWMMMMMMMMMMMKo:,'..oWKxKWd,llcx00xc:cc;lXMMWMMMMMMMMMMMM
-dlxkc;o0o,c0dlXKxkxdKMMMMMMMMMM0lcl:'';ok0Od:o00dcllld0dccxWMMMMMMMMMMMMMMM
-lcckk;,xOco0xldld0xc0MMMMMMMMMMMXx::c;coooodkxddox0kllOd;;xWMMMMMMMMMMMMMMM
-xc;ckxlkKKKKd,:kKxlOWMMMMMMMMMMMMMXl:ocdKxlddddddddoxk0o:kXWMMMMMMMMMMMMMMM
-dkockKKKK0dlodOKxl0WMMWMMMMMMMMMMMWKoc:;dkxxxdddxk0KKK0loWMMMMMMMMMMMMMMMMM
-xlOKKK0K0olO0K0KdoXMMMMMMMMMMMMMMMMMNK0kldKKKKKK00O00K0ldMMMMMMMMMMMMMMMMMM
-Nxlk0K0K0kOK0K0klxWMMMMMMMMMMMMMMMMMMMMMKldKKK0kkkk00KOlkMMMMMMMMMMMMMMMMMM
-MW0ld0K0KK00KOooONMMMMMMMMMMMMMMMMMMMMMMMKoo0K00KK0KK0ooXMMMMMMMMMMMMMMMMMM
-WWWKxoxO0OxddlclOWMMMMMMMMMMMMMMMMMMMMMMMWXxodxOOkxoc,;0MMMMMMMMMMMMMMMMMMM
-MMMMWk:lxxxk0KNkl0MMMMMMMMMMMMMMMMMMMMMMMMMWXd:colllc:;kMMMMMMMMMMMMMMMMMMM
-MMMMMkcOWMMMMMWNddWMMMMMMMMMMMMMMMMMMMMMMMMMWNolKKK0Ox:;oooooodxkkOOO0KNWMM
-MMMMMNdxWWWWNK0Ol:OWMMMMMMMMMMMWWMMMMMWX0Okdol;,ccc:;,;;;;;:ldk0KK00OkkxoxO
-MMMMMWOcdkdolc:::,lXWMMMMMMMMMMNK0kkO0Odl:;;::::::cclodxxO0KNWWMMMWWNKxl;;;
-MMMMMMNl':::::::c:,dWWMMMMMWWKkkkO0XWMMWWXKKKK000KXXNNWMMMMMMMMMWWN0xc:::::
-MMMMMMMk,;::::::clcc0MMMMMWKo:oKWWMMMMMMMMMMMMMMMMMMMMMMMMWWWWNKOdl::::::::
-MMMMMMMNo,ldxkO0KNNkoKWWWNk:;::coxO0KXXNWWMMMMMMMMMWWWWWNX0Oxolc::::::::::c
-MMMMMMMMKlxWWMMMMMWNddNWXo,;:::::;::cclodxxxxxxkkxxxxxdollc:::::::::::::cd0
-MMMMMMMMWddNMMMMMMWWkcOWd,::::::::::::::::::::;;:::::::::::::::::::::::oONW
