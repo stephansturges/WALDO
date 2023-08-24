@@ -1,8 +1,12 @@
 W.A.L.D.O.
-Whereabouts Ascertainment for Low-lying Detectable Objects 
+Whereabouts Ascertainment for Low-lying Detectable Objects !
+
 ---------------------------------------------------------------------
 
 Welcome to the WALDO v2.5 FINAL release! 🥳🥳🥳🥳
+
+![fe361d16-c588-47ad-bff4-1c5185c0cd9f](https://github.com/stephansturges/WALDO/assets/20320678/3a5ad37c-db34-4d71-8a88-325672427b7a)
+
 ---------------------------------------------------------------------
 
 Thanks to all participants in the beta! I had over 3000 sign-ups for the 
