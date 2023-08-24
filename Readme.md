@@ -12,7 +12,7 @@ Welcome to the WALDO v2.5 FINAL release! 🥳🥳🥳🥳
 Thanks to all participants in the beta! I had over 3000 sign-ups for the 
 beta release and iterated really fast... I hope you'll like the result!
 
-I am assuming you have  some experience with deployment of AI systems, 
+I am assuming you have some experience with deployment of AI systems, 
 but if you have any trouble using this release you can contact me at 
 stephan.sturges at gmail
 
@@ -49,7 +49,7 @@ Well trained classes:
 
 ---------------------------------------------------------------------
 
-WHARE IS WALDO?
+WHERE IS WALDO?
 
 Due to the size of the model files and the constraints of github LFS the files
 are no longer stored directly on Github, please download the latest package 
