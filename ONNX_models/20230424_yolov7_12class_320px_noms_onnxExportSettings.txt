@@ -1,2 +1,0 @@
-python3 export.py --weights ../trained_networks/20230424_12class_320_multiscale_yolov7/best.pt --grid --end2end --simplify --topk-all 100 --iou-thres 0.2 --conf-thres 0.25 --img-size 320 320 --max-wh 320
-

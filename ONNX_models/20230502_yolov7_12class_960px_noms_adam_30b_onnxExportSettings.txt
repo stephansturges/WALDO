@@ -1,2 +1,0 @@
-export.py --weights ../trained_networks/20230502_yolov7_30batch/best.pt  --grid --end2end --simplify         --topk-all 100 --iou-thres 0.1 --conf-thres 0.3 --img-size 960 960 --max-wh 960
-
