@@ -90,7 +90,12 @@ If you find anything really blocking send me an email and I'll update this readm
 RUN THE MODELS USING THE BOILERPLATE CODE IN /playground:
 
 1. To run on video: 
-put one or multiple .mp4 files in the ./input_vids subfolder, and then run:
+put one or multiple .mp4 files in the ./input_vids subfolder, and copy
+one or more .onnx model files to the /playground folder, ALL of the videos
+in the ./input_vids folder will be processed with EACH of the .onnx files
+that you put in the ./playground folder (useful for comparison of models!)
+
+...and then run:
 
 python3 run_local_onnx_on_videos.py 
 
@@ -99,7 +104,8 @@ the ./output_vids/ subfolder.
 
 You can also use the following command-line arguments:
 
-python3 run_local_onnx_on_videos.py --frame_limit 3000 --frame_skip 8
+python3 run_local_onnx_on_videos.py  --frame_limit 3000 --frame_skip 8
+
 
 "frame limit" defines where to stop processing the video, if you only want to test it
 on the first 1000 frame then use --frame_limit 1000 for example
@@ -113,7 +119,10 @@ then you can use --frame_skip 30 for instance
 
 Put some images in ./images_in/ and run:
 
-python3 run_local_onnx_on_images.py
+python3 run_local_network_on_images_onnxruntime.py  --model "/path_to_your_preferred_onnx_model.onnx"
+
+"model" is a REQUIRED arguemnt which accepts a path, pointing to the ONNX model you want to use 
+to process the files.
 
 This will run detection on all images in the input folder and save the annotated
 output images in the output folder, along with the txt files of the detections
@@ -124,9 +133,9 @@ a litte overlap for analysis and then merged back together, so you can process
 huge satellite images for example without needing to split them first.
 
 If you want to run the network on a single image that should be processed at native resolution
-you can use the "--resize" flag like this:
+you can use the OPTIONAL "--resize" flag like this:
 
-python3 run_local_onnx_on_images.py --resize
+python3 run_local_network_on_images_onnxruntime.py  --model "/path_to_your_preferred_onnx_model.onnx" --resize
 
 The output can be found in ./images_out/, you'll get images with pretty overlays and .txt files
 with the actual detections
