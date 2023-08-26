@@ -97,14 +97,14 @@ that you put in the ./playground folder (useful for comparison of models!)
 
 ...and then run:
 
-python3 run_local_onnx_on_videos.py 
+python3 run_local_network_on_videos_onnxruntime.py 
 
 This will run the detection network in default settings and save an annotated video to
 the ./output_vids/ subfolder.
 
 You can also use the following command-line arguments:
 
-python3 run_local_onnx_on_videos.py  --frame_limit 3000 --frame_skip 8
+python3 run_local_network_on_videos_onnxruntime.py  --frame_limit 3000 --frame_skip 8
 
 
 "frame limit" defines where to stop processing the video, if you only want to test it
