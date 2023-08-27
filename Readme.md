@@ -19,7 +19,7 @@ stephan.sturges at gmail
 ---------------------------------------------------------------------
 
 
-WHAT IS WALDO?
+# WHAT IS WALDO?
 
 WALDO is a detection AI model, based on a large YOLO-v7 backbone and my own
 synthetic data pipeline. The basic model shared here, which is the only 
@@ -29,38 +29,35 @@ satellite imagery with a resolution of 50cm per pixel or better.
 
 
 Well trained classes:
-1. 'car'  --> all kinds of civilan cars, including pickup trucks
-2. 'van' --> all kinds of civilian vans, gets confused with "car" a lot. You might want to fuse them! 🚗
-3. 'truck' --> all kinds of box-trucks, flatbeds or articulated trucks, NOT small pickup trucks 🚚 
-4. 'building' --> buildings of all kinds 🏣 
-5. 'human' --> people! 🧍
-6. 'gastank'--> cylindrical tanks such as butane tanks and gas expansion tanks, or grain silos 🫙
-7. 'digger' --> all kinds of construction vehicles, including tractors and construction gear 🚜
-8. 'container' --> shipping containers, including on the back of an articulated truck
-9. 'bus' --> a bus 🚌
-10. 'u_pole' --> utility poles, power poles, anything thin and sticking up that you should avoid with a plane 🎏
-11. 'boat' --> boats 🚢
-12. 'bike' --> bikes, mopeds, motorbikes, all things with 2 wheels 🚲 
-13. 'smoke' --> smoke and fire 🔥🔥🔥
-14. 'solarpanels' --> solar panels
-15. 'arm/mil' --> this class detects certain types of armored vehicles (very unreliable for now, don't use it yet)
-16. 'plane' --> planes (very unreliable for now, probably not worth using yet)
-
+1. 'car'  ➡️ all kinds of civilan cars, including pickup trucks 🚘
+2. 'van' ➡️ all kinds of civilian vans, gets confused with "car" a lot. You might want to fuse them! 🚗
+3. 'truck' ➡️ all kinds of box-trucks, flatbeds or articulated trucks, NOT small pickup trucks 🚚 
+4. 'building' ➡️ buildings of all kinds 🏣 
+5. 'human' ➡️ people! 🧍
+6. 'gastank'➡️ cylindrical tanks such as butane tanks and gas expansion tanks, or grain silos 🫙
+7. 'digger' ➡️ all kinds of construction vehicles, including tractors and construction gear 🚜
+8. 'container' ➡️ shipping containers, including on the back of an articulated truck
+9. 'bus' ➡️ a bus 🚌
+10. 'u_pole' ➡️ utility poles, power poles, anything thin and sticking up that you should avoid with a plane 🎏
+11. 'boat' ➡️ boats 🚢
+12. 'bike' ➡️ bikes, mopeds, motorbikes, all things with 2 wheels 🚲 
+13. 'smoke' ➡️ smoke and fire 🔥🔥🔥
+14. 'solarpanels' ➡️ solar panels
+15. 'arm/mil' ➡️ this class detects certain types of armored vehicles (very unreliable for now, don't use it yet)
+16. 'plane' ➡️ planes (very unreliable for now, probably not worth using yet)
 
 ---------------------------------------------------------------------
 
-WHERE IS WALDO?
+# WHERE IS WALDO?
 
 Due to the size of the model files and the constraints of github LFS the files
 are no longer stored directly on Github, please download the latest package 
 using the link below:
 
-https://bit.ly/3P7UdZ6
+[Google Drive](https://bit.ly/3P7UdZ6)
 
 
----------------------------------------------------------------------                                                                                                                                                               
-
-FOR AI NERDS !
+# FOR AI NERDS !
 
 It's a big set of YOLOv7 model, trained on my own datasets of synthetic and "augmented" / semi-synthetic data.
 I'm not going to release the dataset for the time being.
@@ -69,13 +66,11 @@ The ONNX models are exported for onnx-runtime with a batch-size of 1 and a max i
 the network dimensions. They are also set up to export only the top 200 highest-confidence objects in most cases.
 
 I'm planning to set up a way for people to get the .pt files and the ONNX models with unlimited outputs
-for people who support further development of the project on Ko-Fi (https://ko-fi.com/stephansturges), the goal
+for people who support further development of the project on [Ko-Fi](https://ko-fi.com/stephansturges), the goal
 being to offset some of the cost of training these networks (over 60K USD spent on AWS to date! 😅) 
+                                                                    
 
-
----------------------------------------------------------------------                                                                                
-
-HOW CAN I START WITH WALDO?  
+# HOW CAN I START WITH WALDO?  
 
 Setup the environment with python3:
 1. (optional) create a virtual python env for the project
@@ -85,67 +80,67 @@ You may need to install a couple of other bits and pieces depending on your pyth
 If you find anything really blocking send me an email and I'll update this readme.
 
 
----------------------------------------------------------------------  
+## RUN THE MODELS USING THE BOILERPLATE CODE IN `/playground`:
 
-RUN THE MODELS USING THE BOILERPLATE CODE IN /playground:
+### 1. To run on video: 
+put one or multiple `.mp4` files in the `./input_vids` subfolder, and copy
+one or more `.onnx` model files to the `/playground` folder, ALL of the videos
+in the `./input_vids` folder will be processed with EACH of the `.onnx` files
+that you put in the .`/playground` folder (useful for comparison of models!)
 
-1. To run on video: 
-put one or multiple .mp4 files in the ./input_vids subfolder, and copy
-one or more .onnx model files to the /playground folder, ALL of the videos
-in the ./input_vids folder will be processed with EACH of the .onnx files
-that you put in the ./playground folder (useful for comparison of models!)
+and then run:
 
-...and then run:
-
+``` 
 python3 run_local_network_on_videos_onnxruntime.py 
+```
 
 This will run the detection network in default settings and save an annotated video to
-the ./output_vids/ subfolder.
+the `./output_vids/` subfolder.
 
 You can also use the following command-line arguments:
 
+```
 python3 run_local_network_on_videos_onnxruntime.py  --frame_limit 3000 --frame_skip 8
+```
 
+- `frame limit` defines where to stop processing the video, if you only want to test it
+on the first 1000 frame then use `--frame_limit 1000` for example
 
-"frame limit" defines where to stop processing the video, if you only want to test it
-on the first 1000 frame then use --frame_limit 1000 for example
-
-"frame skip" allows you to skip frames to keep processing quicker for testing, so
+- `frame skip` allows you to skip frames to keep processing quicker for testing, so
 if your video is 30 fps and you only one 1 frame per second to be AI-annotated
-then you can use --frame_skip 30 for instance
+then you can use `--frame_skip 30 ` for example
 
 
-2. To run on a single image of any size:
+### 2. To run on a single image of any size:
 
-Put some images in ./images_in/ and run:
+Put some images in `./images_in/` and run:
 
+```
 python3 run_local_network_on_images_onnxruntime.py  --model "/path_to_your_preferred_onnx_model.onnx"
+```
 
-"model" is a REQUIRED arguemnt which accepts a path, pointing to the ONNX model you want to use 
+`model` is a REQUIRED arguemnt which accepts a path, pointing to the **ONNX model** you want to use 
 to process the files.
 
-This will run detection on all images in the input folder and save the annotated
+- This will run detection on all images in the input folder and save the annotated
 output images in the output folder, along with the txt files of the detections
 in YOLO format. 
 
-If the image is LARGER than 960x960px format it will be tiled into squares of 960px with
+- If the image is LARGER than `960x960px` format it will be tiled into squares of `960px` with
 a litte overlap for analysis and then merged back together, so you can process
 huge satellite images for example without needing to split them first.
 
 If you want to run the network on a single image that should be processed at native resolution
-you can use the OPTIONAL "--resize" flag like this:
+you can use the OPTIONAL `--resize` flag like this:
 
+```
 python3 run_local_network_on_images_onnxruntime.py  --model "/path_to_your_preferred_onnx_model.onnx" --resize
+```
 
-The output can be found in ./images_out/, you'll get images with pretty overlays and .txt files
+The output can be found in `./images_out/`, you'll get images with pretty overlays and `.txt` files
 with the actual detections
 
-
----------------------------------------------------------------------
-
-
-
-WHAT IS INCLUDED? 
+# WHAT IS INCLUDED? 
 
 In the FOSS package there are a bunch of networks in ONNX format prepared for ONNXruntime, as
 well as a few examples of networks in other export formats. Only the "V7-base/square/416px" 
@@ -153,28 +148,27 @@ network is included in all formats as part of this release, meaning you get a se
 ONNX exported models including some quantized and prepared for Nvidia TensorRT, and you
 also have the raw .pt files for the training run so that you can export your own.
 I also added the base .pt files for the 512px V7 model.
+
 These files also exist for each other network (or can be exported), but I'm thinking about
 how to make those available for people who support the future development of WALDO in order
 to support the cost of AI model training (which is over 50K $ already up to this point).
 Reach out to me via email if you want a model / export that isn't in here!
 
 
-/!\ Some tips for use:
+#  Some tips for use:
 - In real-world use cases you may want to merge classes 1 & 2 since there this still 
 a lot of confusion between those classes
+
 - The models are exported with non-maximum-suppression, so if you are using the
 AI system in cases where objects are occluded by one another you will only get
 the "most valid" object in most cases. 
 
-
-Some of the network that is in this repo is very large, and is meant to be run on 
+- Some of the network that is in this repo is very large, and is meant to be run on 
 an inference server, and some are made for embedding on tiny edge devices... take 
 a look around and find one that works for you!
 
 
----------------------------------------------------------------------
-
-GOING DEEPER
+# GOING DEEPER
 
 Of course if you know your way around deploying AI models there is a lot more you do
 with this release, inclusing:
@@ -182,7 +176,7 @@ with this release, inclusing:
 1. There are certain models already released in CoreML format for iOS, give those a try
 2. There are some models that are exported for TensorRT, including some cool quantization!
 3. For a couple of models the .pt files are included in this release, play with making
-your own exports or running thos directly using YOLOv7 from https://github.com/WongKinYiu/yolov7
+your own exports or running thos directly using YOLOv7 from [This Link](https://github.com/WongKinYiu/yolov7)
 4. Get yourself a cool, cheap, little AI camera from Luxonis and run one of the OpenVino blobs
 that are currently exported for the V7-base/416px network and the V7-tiny/512px network. These
 are super cool and do excellent AI detections directly on 15g hardware that costs <200$... crazy stuff.
@@ -191,28 +185,19 @@ are super cool and do excellent AI detections directly on 15g hardware that cost
 
 Enjoy!
 
----------------------------------------------------------------------
 
 
+# PREVIOUS VERSIONS
 
-PREVIOUS VERSIONS
-
-You can find the repo with WALDO v1.0 here:
-https://github.com/stephansturges/WALDO
+You can find the repo with WALDO v1.0 [here](https://github.com/stephansturges/WALDO)
 
 
----------------------------------------------------------------------
-
-
-CAN YOU HELP ME WITH X? 
+# CAN YOU HELP ME WITH X? 
 
 Sure, email me at stephan.sturges@gmail.com
 
 
----------------------------------------------------------------------
-
-
-DETECTION OF X ISN'T WORKING AS EXPECTED:
+# DETECTION OF X ISN'T WORKING AS EXPECTED:
 
 I'd love to see example images, videos, sample data, etc at:
 stephan.sturges@gmail.com
@@ -240,9 +225,8 @@ etc...
 
 Contact me at stephan.sturges@gmail.com to find out more.
 
----------------------------------------------------------------------
 
-SUPPORT WALDO!
+# SUPPORT WALDO!
 
 Training this base model took about 3 months of work and ~20K$ in cloud compute.
 If you find value in it, please support development of the next version on:
@@ -251,20 +235,13 @@ https://ko-fi.com/stephansturges
 You can also sign-up there to be a sponsor of WALDO for 500$ / month and get 
 early access to future models.
 
- ____    ____    ____    ____    ____    ____    ____    ____    ____    ____   
-/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\____/\/\___ 
-\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/____\/\/___
 
-
-LICENSE
-----------------------------------------------------------------------------
+# LICENSE
 
 Unless otherwise specified all code in this release is published with the 
 licence conditions below.
-----------------------------------------------------------------------------
 
-
-MIT License
+**MIT License**
 
 Copyright (c) 2023 Stephan Sturges / Aircortex.com 
 
