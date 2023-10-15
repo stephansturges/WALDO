@@ -63,9 +63,9 @@ def split_image(image, tile_size=(960, 960), padding=(0, 0)):
     # Pad the image to ensure it's divisible by the tile size
     padded_image = cv2.copyMakeBorder(
         image,
-        0,
+        pad_height,
         tile_height * num_tiles_y - height + pad_height * 2,
-        0,
+        pad_width,
         tile_width * num_tiles_x - width + pad_width * 2,
         cv2.BORDER_CONSTANT,
         value=(114, 114, 114),
