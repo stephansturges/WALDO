@@ -45,7 +45,7 @@ Well trained classes:
 
 ---------------------------------------------------------------------
 
-WHARE IS WALDO?
+WHERE IS WALDO?
 
 Due to the size of the model files and the constraints of github LFS the files
 are no longer stored directly on Github, please download the latest package 
