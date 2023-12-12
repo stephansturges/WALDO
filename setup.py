@@ -2,7 +2,7 @@ import platform
 from setuptools import setup
 
 # Determine the right package based on the user's system
-onnx_dependency = 'onnxruntime-silicon' if platform.system(
+onnx_dependency = 'onnxruntime-silicon==1.16.0' if platform.system(
 ) == 'Darwin' and platform.machine() == 'arm64' else 'onnxruntime-gpu==1.15.1'
 
 setup(
