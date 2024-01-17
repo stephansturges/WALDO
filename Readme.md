@@ -75,7 +75,7 @@ HOW CAN I START WITH WALDO?
 
 Setup the environment with python3:
 1. (optional) create a virtual python env for the project
-2. install dependencies using the requirements file: pip install -r requirements.txt 
+2. install dependencies using the `setup.py` file: `python3 setup.py install`
 
 You may need to install a couple of other bits and pieces depending on your python3 env...
 If you find anything really blocking send me an email and I'll update this readme.
