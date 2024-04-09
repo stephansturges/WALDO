@@ -2,6 +2,9 @@ W.A.L.D.O.
 Whereabouts Ascertainment for Low-lying Detectable Objects 
 ---------------------------------------------------------------------
 
+
+[![WALDO 2.4 preview vid](https://i.imgur.com/6YzmZ5P.png)](https://www.youtube.com/watch?v=1caA0ZVPqhA)
+
 Welcome to the WALDO v2.5 FINAL release! 🥳🥳🥳🥳
 ---------------------------------------------------------------------
 
