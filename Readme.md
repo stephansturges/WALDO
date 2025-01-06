@@ -49,7 +49,7 @@ Those are for sale as a kind of sponsorship for the project: if you find value i
 [![P2 model performance boost](https://i.imgur.com/VKa5NN5.png)]
 
 
-In both cases the actual files are MIT license and you can freely share them, so if someone gives you the ones from Gumroad you are free yo use them including commercially. It's really just a way to offset some of the work and compute that went into making this project and keeping it FOSS.
+In both cases the actual files are MIT license and you can freely share them, so if someone gives you the ones from Gumroad you are free to use them including commercially. It's really just a way to offset some of the work and compute that went into making this project and keeping it FOSS.
 
 
 ---------------------------------------------------------------------                                                                                                                                                               
