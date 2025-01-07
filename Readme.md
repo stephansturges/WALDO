@@ -3,6 +3,8 @@ Whereabouts Ascertainment for Low-lying Detectable Objects
 ---------------------------------------------------------------------
 
 
+## /!\ Look out: the latest versions of the model are on HF [here](https://huggingface.co/StephanST/WALDO30)
+
 [![WALDO 3.0 preview vid](https://i.imgur.com/hGghrLn.jpeg)](https://www.youtube.com/watch?v=1y5y9yklj2U)
 
 Welcome to the WALDO v3.0 public release
